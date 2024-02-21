@@ -7,7 +7,7 @@ heading_style = '''
 <h1>Heart Stroke Prediction</h1>
 </div>
 '''
-def return_df(gender,age,hypertension,heart_disease,ever_married,work_type	,Residence_type,avg_glucose_level,bmi,smoking_status):
+def return_df(gender,age,hypertension,heart_disease,ever_married,work_type,Residence_type,avg_glucose_level,bmi,smoking_status):
     kbn={
 	'gender':[gender],
     'age':[age],
@@ -36,7 +36,7 @@ Residence_type=st.selectbox('This is Residence_type', ['Urban','Rural'])
 avg_glucose_level=st.number_input('This is avg_glucose_level',min_value=0)
 bmi=st.number_input('This is bmi', min_value=0)
 smoking_status=st.selectbox('This is smoking_status', ['smokes','never smoked','formerly smoked','Unknown'])
-df=return_df(gender,age,hypertension,heart_disease,ever_married,work_type	,Residence_type,avg_glucose_level,bmi,smoking_status)
+df=return_df(gender,age,hypertension,heart_disease,ever_married,work_type,Residence_type,avg_glucose_level,bmi,smoking_status)
 if st.button('Submit'):
 	model=base_model()
 	preds=model.predict(df)
