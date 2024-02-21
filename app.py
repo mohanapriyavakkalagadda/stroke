@@ -4,7 +4,7 @@ import pandas as pd
 import joblib as jb
 heading_style = '''
 <div style="color:red;" align='center'>
-<h1>Healthcare dataset stroke data</h1>
+<h1>Heart Stroke Prediction</h1>
 </div>
 '''
 def return_df(gender,age,hypertension,heart_disease,ever_married,work_type	,Residence_type,avg_glucose_level,bmi,smoking_status):
