@@ -7,8 +7,6 @@ heading_style = '''
 <h1>Heart Stroke Prediction</h1>
 </div>
 '''
-st.markdown(f'''
-<h1 align='center'>Heart Stroke Prediction</h1>'''
 def return_df(gender,age,hypertension,heart_disease,ever_married,work_type,Residence_type,avg_glucose_level,bmi,smoking_status):
     kbn={
 	'gender':[gender],
